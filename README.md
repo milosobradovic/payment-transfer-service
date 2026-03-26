@@ -14,9 +14,8 @@ An Angular application that allows users to **manage their bank accounts** and *
 ---
 
 ## 🛠 Usage
-Navigate the dashboard to see your accounts and recent transactions
-Use the transfer form to make payments
-Success and error messages are displayed as in-app notifications
+Navigate the dashboard to see your accounts and recent transactions. 
+Use the transfer form to make payments. Success and error messages are displayed as in-app notifications
 
 ---
 
