@@ -15,8 +15,6 @@ An Angular application that allows users to **manage their bank accounts** and *
 
 ## 💻 Installation
 
-Clone the repository:
-
 ```bash
 git clone git@github.com:milosobradovic/payment-transfer-service.git
 
@@ -25,6 +23,8 @@ npm install
 ng serve
 
 Open your browser and go to: http://localhost:4200
+
+---
 
 ## 🛠 Usage
 Navigate the dashboard to see your accounts and recent transactions
