@@ -1,0 +1,41 @@
+<div class="account-list-wrapper">
+  <ng-container *ngIf="accounts().length > 0; else noAccounts">
+    <ng-container *ngFor="let account of accounts()">
+      <mat-card class="account-card">
+        <mat-card-header>
+          <div mat-card-avatar class="icon-avatar">
+            <mat-icon>
+              {{ ACCOUNT_TYPE_CONFIG[account.accountType]?.icon }}
+            </mat-icon>
+          </div>
+          <mat-card-title>{{ account.firstName }} {{ account.lastName }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <mat-chip-set aria-label="Account Information">
+            <mat-chip class="balance-chip" color="secondary" selected>
+              <mat-icon matChipAvatar>account_balance</mat-icon>
+              {{ account.balance | currency }}
+            </mat-chip>
+            <mat-chip color="primary" selected>
+              {{ account.accountType | titlecase }}
+            </mat-chip>
+            <mat-chip color="primary" selected>
+              <mat-icon matChipAvatar>calendar_month</mat-icon>
+              {{ account.createdDate | date }}
+            </mat-chip>
+          </mat-chip-set>
+        </mat-card-content>
+        <mat-card-actions align="end">
+          <button mat-stroked-button color="warn" (click)="onTransfer(account)">
+            Transfer To Account
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </ng-container>
+  </ng-container>
+  <ng-template #noAccounts>
+    <div class="no-accounts">
+      No accounts available yet. Loading...
+    </div>
+  </ng-template>
+</div>

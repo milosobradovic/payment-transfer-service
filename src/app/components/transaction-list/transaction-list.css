@@ -1,0 +1,10 @@
+.transaction-table {
+    width: 100%;
+    overflow-x: auto;
+}
+table {
+    width: 100%;
+}
+.transaction-table-mattable {
+    background: none;
+}

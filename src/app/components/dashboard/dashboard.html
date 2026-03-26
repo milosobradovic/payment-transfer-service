@@ -1,0 +1,49 @@
+<div class="dashboard-container">
+  <div class="cards-wrapper">
+    <mat-card class="card">
+      <mat-card-header>
+        <mat-card-title>Total</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <h2>{{ transferService.totalBalance() | currency }}</h2>
+        <p>Spread over {{ transferService.totalNumOfAccounts() }} accounts</p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="card">
+      <mat-card-header>
+        <mat-card-title>Transfered Total</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <h2>{{ transferService.totalTransfer() | currency:'USD' }}</h2>
+        <p>{{ transferService.totalNumOfTransactions() > 0 ? ' Transactions recorded: ' + transferService.totalNumOfTransactions() : 'No transactions recorded' }}</p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="card">
+      <mat-card-header>
+        <mat-card-title>Make a Transfer</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Move funds securely between accounts</p>
+      </mat-card-content>
+      <mat-card-actions style="margin-top: 20px;" align="end">
+        <button mat-flat-button color="primary" (click)="openTransferDialog()">
+          Make Transfer
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
+
+<section class="account-list-section">
+    <div class="account-list">
+        <app-account-list (transferRequested)="onTransferRequested($event)"></app-account-list>
+    </div>
+</section>
+
+<section class="transaction-list-section">
+    <div class="transaction-list">
+        <app-transaction-list></app-transaction-list>
+    </div>
+</section>

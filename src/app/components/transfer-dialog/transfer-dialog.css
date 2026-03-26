@@ -1,0 +1,14 @@
+mat-dialog-content { min-width: 300px; }
+
+.full-width {
+  width: 100%;
+}
+
+.error-msg {
+  color: #b00020;
+  margin-top: 8px;
+}
+
+mat-dialog-actions {
+  justify-content: flex-end;
+}
