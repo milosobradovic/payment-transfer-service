@@ -8,7 +8,7 @@ An Angular application that allows users to **manage their bank accounts** and *
  
 - Execute payments and transfer funds between accounts easily.
 - Track transactions with sortable, filterable history.
-- Secure authentication and responsive design for desktop and mobile.
+- Responsive design for better desktop and mobile experience.
 - Notifications and error handlings.
 
 ---
@@ -19,20 +19,14 @@ Clone the repository:
 
 ```bash
 git clone git@github.com:milosobradovic/payment-transfer-service.git
-cd payment-transfer-service
-
-Install dependencies:
 
 npm install
 
-Serve the app locally:
-
 ng serve
 
-Open your browser and go to:
+Open your browser and go to: http://localhost:4200
 
-http://localhost:4200
-🛠 Usage
+## 🛠 Usage
 Navigate the dashboard to see your accounts and recent transactions
 Use the transfer form to make payments
 Success and error messages are displayed as in-app notifications
