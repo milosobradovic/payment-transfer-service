@@ -30,3 +30,12 @@ npm install
 ng serve
 
 Open your browser and go to: http://localhost:4200
+
+## 🛠 Technologies Used
+
+- **Angular 20+** – Framework for building the app  
+- **Angular Material** – UI components and responsive layouts  
+- **TypeScript** – Type-safe development  
+- **RxJS** – Handling asynchronous data streams  
+- **Node.js & npm** – Runtime and package management  
+- **Git & GitHub** – Version control and repository hosting  
