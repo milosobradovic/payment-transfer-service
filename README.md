@@ -1,16 +1,15 @@
 # Payment Transfer Service
 
-An Angular application that allows users to **manage their bank accounts** and **perform secure transfers** in a modern, intuitive interface.
+An Angular application that allows users to **manage their bank accounts** and **perform secure transfers** using a modern, intuitive interface.
 
 ---
 
 ## 🚀 Features
-
-- View all types of accounts: savings, trust, joint, etc.  
-- Execute payments and track transaction history  
-- Animated dashboards for a clear overview of transactions  
-- Secure authentication and responsive design  
-- Notifications for successful or failed operations  
+ 
+- Execute payments and transfer funds between accounts easily.
+- Track transactions with sortable, filterable history.
+- Secure authentication and responsive design for desktop and mobile.
+- Notifications and error handlings.
 
 ---
 
@@ -28,7 +27,7 @@ npm install
 
 Serve the app locally:
 
-npx ng serve
+ng serve
 
 Open your browser and go to:
 
@@ -36,4 +35,4 @@ http://localhost:4200
 🛠 Usage
 Navigate the dashboard to see your accounts and recent transactions
 Use the transfer form to make payments
-Success and error messages are displayed in-app
+Success and error messages are displayed as in-app notifications
